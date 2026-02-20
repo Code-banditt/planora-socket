@@ -9,7 +9,7 @@ app.use(express.json());
 
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: { origin: "http://localhost:3000", methods: ["GET", "POST"] },
+  cors: { origin: "https://planora-v2.vercel.app", methods: ["GET", "POST"] },
 });
 
 // Store connected users (userId => Set of socketIds)
